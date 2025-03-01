@@ -1,0 +1,71 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+}
+
+.main {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: linear-gradient(135deg, #ff7f50, #1abc9c); /* Vibrant gradient with coral and mint green */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff; /* White text for better visibility */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ecf0f1; /* Soft light gray text */
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: white;
+  background: #3498db;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #5dade2;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1.02);
+}
